@@ -2,19 +2,114 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>新宿デートスポット</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新宿デートガイド</title>
+
+    <style>
+        body {
+            font-family: "Helvetica", "Arial", sans-serif;
+            margin: 0;
+            background: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background: #ff6699;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            border-left: 6px solid #ff6699;
+            padding-left: 10px;
+        }
+
+        .spot {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 30%;
+            border-radius: 8px;
+        }
+
+        iframe {
+            width: 100%;
+            border: 0;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        /* スマホ対応 */
+        @media (max-width: 600px) {
+            .gallery img {
+                width: 48%;
+            }
+
+            header {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>新宿デートスポット</h1>
-    <p>ここにおすすめスポットを入れるよ！</p>
+<header>✨ 新宿デートガイド ✨</header>
 
-    <h2>🌆 新宿のおすすめ場所1：新宿御苑</h2>
-    <p>ゆっくり散歩できて、カップルでのんびり過ごすのに最適。</p>
+<section>
+    <h2>おすすめスポット 💑</h2>
 
-    <h2>🌃 おすすめ場所2：東京都庁 展望室</h2>
-    <p>無料で夜景が見られるデート最強スポット！</p>
+    <div class="spot">
+        <h3>① 新宿御苑</h3>
+        <p>自然いっぱいの癒しスポット。ピクニックにも最適！</p>
+    </div>
 
-    <h2>🎬 おすすめ場所3：バルト9</h2>
-    <p>映画デートにぴったり。スクリーンもきれい。</p>
+    <div class="spot">
+        <h3>② 新宿バルト9</h3>
+        <p>デートの定番！映画をゆっくり楽しめるシネコン。</p>
+    </div>
+
+    <div class="spot">
+        <h3>③ サナギ新宿</h3>
+        <p>雰囲気抜群のフードスポット。夜の雰囲気が最高。</p>
+    </div>
+</section>
+
+<section>
+    <h2>ギャラリー 📸</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Shinjuku+1">
+        <img src="https://via.placeholder.com/300x200?text=Shinjuku+2">
+        <img src="https://via.placeholder.com/300x200?text=Shinjuku+3">
+    </div>
+</section>
+
+<section>
+    <h2>新宿の地図 🗺</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.906035922073!2d139.70064531511767!3d35.69384018019139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd19060a4d7%3A0x2b4390b1fc3eb7ed!2z5paw5a6_6LC35ZCN!5e0!3m2!1sja!2sjp!4v1700000000000"
+        loading="lazy">
+    </iframe>
+</section>
+
 </body>
 </html>
