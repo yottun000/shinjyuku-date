@@ -6,22 +6,28 @@
     <title>新宿デートガイド</title>
 
     <style>
+        /* 全体 */
         body {
             font-family: "Helvetica", "Arial", sans-serif;
             margin: 0;
-            background: #fafafa;
+            background: #fff;
             color: #333;
         }
 
+        /* ヘッダー */
         header {
-            background: #ff6699;
+            background: #ff3366;  /* 明るいピンク */
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
+        /* セクション */
         section {
             padding: 20px;
             max-width: 900px;
@@ -30,33 +36,54 @@
 
         h2 {
             border-left: 6px solid #ff6699;
-            padding-left: 10px;
+            padding-left: 12px;
+            font-size: 24px;
         }
 
+        h3 {
+            font-size: 22px;
+            color: #ff3366;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* スポットボックス */
         .spot {
-            background: white;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: #fff0f5; /* 薄ピンク */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
+        /* ギャラリー */
         .gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            justify-content: center;
         }
 
         .gallery img {
             width: 30%;
-            border-radius: 8px;
+            border-radius: 10px;
+            transition: transform 0.3s;
         }
 
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Google Map */
         iframe {
             width: 100%;
             border: 0;
             height: 300px;
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         /* スマホ対応 */
@@ -66,7 +93,15 @@
             }
 
             header {
-                font-size: 22px;
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
             }
         }
     </style>
@@ -80,7 +115,7 @@
 
     <div class="spot">
         <h3>① 新宿御苑</h3>
-        <p>自然いっぱいの癒しスポット。ピクニックにも最適！</p>
+        <p>自然いっぱいの癒しスポット。ピクニックや散策に最適！</p>
     </div>
 
     <div class="spot">
@@ -90,7 +125,7 @@
 
     <div class="spot">
         <h3>③ サナギ新宿</h3>
-        <p>雰囲気抜群のフードスポット。夜の雰囲気が最高。</p>
+        <p>雰囲気抜群のフードスポット。夜のデートにもぴったり。</p>
     </div>
 </section>
 
